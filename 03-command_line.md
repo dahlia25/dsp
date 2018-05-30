@@ -21,16 +21,16 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > Below is a short list of commands:
-1. **pwd** shows current working directory path
-2. **mkdir** - creates a new directory/file
-3. **rmdir** - deletes a directory
-4. **touch *new_file_name_here*** creates a file using `touch` command
-5. **rm** deletes a file
-6. **mv** - the mv command will rename a file
-7. **ls -a** lists all hidden files
-8. **cp** copies a file from one directory to another
-9. **cd** changes the directory
-10. **sudo** command allows you to temporarily become another user
+1. `pwd` shows current working directory path
+2. `mkdir` - creates a new directory/file
+3. `rmdir` - deletes a directory
+4. `touch *new_file_name_here*` creates a file using `touch` command
+5. `rm` deletes a file
+6. `mv` - the mv command can rename or move a file
+7. `ls -a` lists all hidden files
+8. `cp` copies a file from one directory to another
+9. `cd` changes the directory
+10. `sudo` command allows you to temporarily become another user
 
 ---
 
@@ -45,7 +45,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Below is a description of the commands listed above:
+* `ls` lists all files in current working directory
+* `ls -a` lists all *hidden* files, including those that start with '.'
+* `ls -l` lists all files in long format, where the owner (permissions), group, size and time are shown
+* `ls -lh` lists all files with readable file size in long format
+* `ls -lah` lists all hidden files with readable file size in long format
+* `ls -t` lists and sorts all files by date and time
+* `ls -Glp` lists all files in a long format without including group names, and appends **/** indicator to all directories
 
 ---
 
@@ -53,7 +60,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The following are some of my favorites:
+1. `ls -r` lists and sorts all files in reverse alphabetical order
+2. `ls -X` lists and sorts by extension names
+3. `ls -u` lists and displays files by file access time
+4. `ls -R` lists and shows subdirectories as well
+5. `ls -q` lists and shows all nonprinting characters as **?**
 
 ---
 
@@ -61,7 +73,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The **xargs** command allows commands such as mkdir, rm to accept standard inputs as arguments. By default, the command is executed once on all arguments in standard input, separated by blanks.
 
+*For Example:* Assuming the following three directories exist: 'a', 'b' and 'c'. In this case, the three directories are the standard inputs. We will use `xargs` to execute the `echo` and `rmdir` commands on each standard input in which are converted to arguments.
+`echo 'a b c' | xargs rmdir`
+
+Dicectories 'a', 'b' and 'c' will be deleted after the code aboveis executed.
  
 
