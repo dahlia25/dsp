@@ -75,9 +75,10 @@ What does `xargs` do? Give an example of how to use it.
 
 > > The **xargs** command allows commands such as mkdir, rm to accept standard inputs as arguments. By default, the command is executed once on all arguments in standard input, separated by blanks.
 
-*For Example:* Assuming the following three directories exist: 'a', 'b' and 'c'. In this case, the three directories are the standard inputs. We will use `xargs` to execute the `echo` and `rmdir` commands on each standard input in which are converted to arguments.
+> > *For example:* Assuming the following three directories exist: 'a', 'b' and 'c'. In this case, the three directories are the standard inputs. We will use `xargs` to execute the `echo` and `rmdir` commands on each standard input in which are converted to arguments.
+
 `echo 'a b c' | xargs rmdir`
 
-Dicectories 'a', 'b' and 'c' will be deleted after the code aboveis executed.
+> > Directories 'a', 'b' and 'c' will be deleted after the code aboveis executed.
  
 
