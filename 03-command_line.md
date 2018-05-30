@@ -79,6 +79,6 @@ What does `xargs` do? Give an example of how to use it.
 
 `echo 'a b c' | xargs rmdir`
 
-> > Directories 'a', 'b' and 'c' will be deleted after the code aboveis executed.
+> > Directories 'a', 'b' and 'c' will be deleted after the code aboveis executed
  
 
