@@ -22,11 +22,11 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > Below is a short list of commands:
 1. `pwd` shows current working directory path
-2. `mkdir` - creates a new directory/file
-3. `rmdir` - deletes a directory
+2. `mkdir` creates a new directory/file
+3. `rmdir` deletes a directory
 4. `touch *new_file_name_here*` creates a file using `touch` command
 5. `rm` deletes a file
-6. `mv` - the mv command can rename or move a file
+6. `mv` can rename or move a file
 7. `ls -a` lists all hidden files
 8. `cp` copies a file from one directory to another
 9. `cd` changes the directory
