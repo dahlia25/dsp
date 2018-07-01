@@ -79,7 +79,7 @@ Input: `CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)`
 
 Output: -0.088672927072602
 
-Explanation: On average, first babies are lighter than other babies. The mean weight of first babies is 7.20 pounds, while the mean weight of other babies is 7.33 pounds. In comparison, the pregnancy length for first babies is slightly longer than that of other babies; the mean pregnancy length of first babies is 38.6 weeks, and that of other babies is 38.5 weeks.
+**Explanation:** On average, first babies are lighter than other babies. The mean weight of first babies is 7.20 pounds, while the mean weight of other babies is 7.33 pounds. The weight of first babies is lighter than that of other babies by 0.0887 standard deviations. In comparison, the pregnancy length for first babies is slightly longer than that of other babies; the mean pregnancy length of first babies is 38.6 weeks, and that of other babies is 38.5 weeks. The pregnancy length of first babies is 0.078 standard deviations longer than that of other babies.
 
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
