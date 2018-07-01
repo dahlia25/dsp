@@ -100,11 +100,13 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 
 > `thinkplot.Config(xlabel='Number of children', ylabel='pmf')`
 
-![](resp.numkhh.png)
+![](https://github.com/dahlia25/dsp/blob/master/img/resp.numkhh.png?raw=true)
 
 > Input: `pmf.Mean(), biased.Mean()`
 
 > Output: `(1.024205155043831, 2.403679100664282)` 
+
+> **Explanation:** For children of 2 or more in the household, the biased distribution shows a higher probability than that of the actual distribution. 
 
 ### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
