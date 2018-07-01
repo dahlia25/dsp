@@ -100,7 +100,7 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 
 > `thinkplot.Config(xlabel='Number of children', ylabel='pmf')`
 
-(image here)
+!(image)[resp.numkhh.png]
 
 > Input: `pmf.Mean(), biased.Mean()`
 
