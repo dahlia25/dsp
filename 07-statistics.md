@@ -88,17 +88,17 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 
 > **Code:**
 
-> `pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')`
+```
+pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
 
-> `thinkplot.Pmf(pmf)`
+thinkplot.Pmf(pmf)`
+thinkplot.Config(xlabel='Number of Children', ylabel='PMF')
 
-> `thinkplot.Config(xlabel='Number of Children', ylabel='PMF')`
+biased = BiasPmf(pmf, label='biased')
 
-> `biased = BiasPmf(pmf, label='biased')`
-
-> `thinkplot.Pmfs([pmf, biased])`
-
-> `thinkplot.Config(xlabel='Number of children', ylabel='pmf')`
+thinkplot.Pmfs([pmf, biased])
+thinkplot.Config(xlabel='Number of children', ylabel='pmf')
+```
 
 ![](https://github.com/dahlia25/dsp/blob/master/img/resp.numkhh.png?raw=true)
 
@@ -115,21 +115,21 @@ This questions asks you to examine the function that produces random numbers.  I
 
 > **Code:**
 
-`a = np.random.random(1000)`  
+`a = np.random.random(1000)`
 
 `pmf = thinkstats2.Pmf(a)`
 
 `thinkplot.Pmf(pmf, linewidth=0.1)`
 
-`thinkplot.Config(xlabel='Random Number', ylabel='PMF')`
+`thinkplot.Config(xlabel='Random Number', ylabel='PMF')
 
 ![](https://github.com/dahlia25/dsp/blob/master/img/random.np.pmf.png?raw=true)
 
-`cdf = thinkstats2.Cdf(a)`
-
-`thinkplot.Cdf(cdf)`
-
-`thinkplot.Config(xlabel='Random Number', ylabel='CDF')`
+```
+cdf = thinkstats2.Cdf(a)
+thinkplot.Cdf(cdf)
+thinkplot.Config(xlabel='Random Number', ylabel='CDF')
+```
 
 ![](https://github.com/dahlia25/dsp/blob/master/img/random.np.cdf.png?raw=true)
 
@@ -138,7 +138,24 @@ This questions asks you to examine the function that produces random numbers.  I
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
+> Answer:
 
+> **Code:**
+
+```
+mu = 178`
+sigma = 7.7`
+dist = scipy.stats.norm(loc=mu, scale=sigma)`
+
+low = dist.cdf(177.8)    # 5'10"`
+high = dist.cdf(185.4)   # 6'1"`
+```
+
+> Input: low, high, high-low
+
+> Output: (0.9998503364598891, 0.999860615828067, 1.0279368177879e-05)
+
+> **Explanation:** About 0.0013% of the U.S. male population is between 5'10" and 6'1". 
 
 ### Q5. Bayesian (Elvis Presley twin) 
 
