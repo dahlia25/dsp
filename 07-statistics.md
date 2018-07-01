@@ -111,6 +111,30 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 ### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
+> Answer:
+
+> **Code:**
+
+`a = np.random.random(1000)`  
+
+`pmf = thinkstats2.Pmf(a)`
+
+`thinkplot.Pmf(pmf, linewidth=0.1)`
+
+`thinkplot.Config(xlabel='Random Number', ylabel='PMF')`
+
+![](https://github.com/dahlia25/dsp/blob/master/img/random.np.pmf.png?raw=true)
+
+`cdf = thinkstats2.Cdf(a)`
+
+`thinkplot.Cdf(cdf)`
+
+`thinkplot.Config(xlabel='Random Number', ylabel='CDF')`
+
+![](https://github.com/dahlia25/dsp/blob/master/img/random.np.cdf.png?raw=true)
+
+> **Explanation:** The CDF plot shows that the randomly generated numbers are uniformly distributed. Because the distribution is uniform, the PMF showed all number variates to be straight lines. Hence, the CDF is a better visualization in this case.
+
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
